@@ -20,9 +20,22 @@ $(document).ready(function(){
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
 	});
+
+	$(document).on("keydown", function(x){
+		if(x.keyCode == 88) {
+			$(".ryu-ready").hide();
+			$(".ryu-cool").show();
+		}
+	})
+	.on("keyup", function(){
+		$(".ryu-ready").show();
+		$(".ryu-cool").hide();
+	});
 });
+
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+

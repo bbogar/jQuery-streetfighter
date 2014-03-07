@@ -1,5 +1,14 @@
+/** {
+	outline: 1px solid red;
+}*/
+
 body {
 	background-color: black;
+}
+
+p {
+	font-family: 'Bangers', cursive;
+	font-size: 30px;
 }
 
 .main {
@@ -10,7 +19,8 @@ body {
 	height: 500px;
 }
 
-.hadouken, 
+.hadouken,
+.logo, 
 .ryu-ready, 
 .ryu-still, 
 .ryu-cool,
@@ -24,9 +34,23 @@ body {
 	height: 90px;
 	display: none;
 	position: relative;
-	top: 167px;
+	top: -76px;
 	left: -212px;
 	float: left;
+}
+
+.text {
+float: right;
+}
+
+.instructions,
+.logo {
+	display: none;
+	width: 500px;
+	height: 250px;
+	position: relative;
+	top: 95px;
+	right: 100px;
 }
 
 .ryu {
@@ -61,4 +85,8 @@ body {
 
 .ryu-cool {
 	background-image: url(../images/ryu-cool.gif);
+}
+
+.logo {
+	background-image: url(../images/street-fighter-logo.png);
 }

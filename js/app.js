@@ -28,9 +28,11 @@ $(document).ready(function(){
 			$(".ryu-cool").show();
 		}
 	})
-	.on("keyup", function(){
-		$(".ryu-ready").show();
-		$(".ryu-cool").hide();
+	.on("keyup", function(x){
+		if(x.keyCode == 88) {
+			$(".ryu-ready").show();
+			$(".ryu-cool").hide();
+		}
 	});
 
 	$(".logo").fadeIn("slow", function(){
@@ -38,7 +40,7 @@ $(document).ready(function(){
 			$(".instructions").fadeIn("slow");
 		});
 	});
-	
+
 });
 
 function playHadouken () {

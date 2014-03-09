@@ -31,7 +31,7 @@ $(document).ready(function(){
 	})
 	.on("keyup", function(x){
 		if(x.keyCode == 88) {
-			$(".ryu-ready").show();
+			//$(".ryu-ready").show();
 			$(".ryu-still").show();
 			//$(".ryu-cool").hide();
 		}

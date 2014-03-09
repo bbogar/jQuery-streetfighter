@@ -24,13 +24,14 @@ $(document).ready(function(){
 
 	$(document).on("keydown", function(x){
 		if(x.keyCode == 88) {
+			$(".ryu-still").hide();
 			$(".ryu-ready").hide();
 			$(".ryu-cool").show();
 		}
 	})
 	.on("keyup", function(x){
 		if(x.keyCode == 88) {
-			$(".ryu-ready").show();
+			$(".ryu-still").show();
 			$(".ryu-cool").hide();
 		}
 	});
